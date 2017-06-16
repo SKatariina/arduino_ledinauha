@@ -18,20 +18,30 @@ void loop() {
   delay(10);*/
 
   for (int i=0;i<62;i++){
-  strip.setPixelColor(i-1,0, 0, 0);
+  strip.setPixelColor(i-1,255, 255, 255);
   strip.setPixelColor(i,255, 0, 97);
+  strip.setPixelColor(i-4,0, 0, 0);
+  strip.setPixelColor(i-2, 255, 0, 255);
+  strip.setPixelColor(i-3, 8, 255, 215); 
+  strip.setPixelColor(i-8 ,255, 0, 97);
+  strip.setPixelColor(i-9, 0, 0, 0);
+  strip.setPixelColor(i-11, 255, 255, 255);
+  strip.setPixelColor(i-12, 0, 0, 0);
+  strip.setPixelColor(i-14, 255, 0, 255);
+  strip.setPixelColor(i-15, 0, 0, 0);
+  strip.setPixelColor(i-17, 8, 255, 215);
+  strip.setPixelColor(i-18, 0, 0, 0);
   strip.show();
-  delay(200); 
+  delay(200);
   }
-
-for (int i=0;i<62;i++){
-strip.setPixelColor(i-2, 0, 0, 0);
-strip.setPixelColor(i, 8, 255, 215);
-strip.show();
-delay(200);
-}
   
-
+   for (int i=0;i<62;i++){
+  strip.setPixelColor(i,0, 0, 0);
+  strip.show();
+  }
+  
+  
+ 
 for (int i=0;i<x+5;i++){
    strip.setPixelColor(i,255, 0, 97);
    
@@ -39,8 +49,8 @@ for (int i=0;i<x+5;i++){
   delay(200);
   x++;
   if (x=1)x=5;
-}
 
+}
 for (int i=5;i<x+5;i++){
     strip.setPixelColor(i, 0, 255, 0);
   
@@ -58,8 +68,8 @@ for (int i=10;i<x+5;i++){
   delay(200);
   x++;
   if (x=1)x=15;
-
 }
+
   
 for (int i=15;i<x+5;i++){
   strip.setPixelColor(i, 0, 0, 255);
@@ -68,8 +78,7 @@ for (int i=15;i<x+5;i++){
   delay(200);
   x++;
   if (x=1)x=20;
-} 
-
+}
 for (int i=20;i<x+5;i++){
     strip.setPixelColor(i, 255, 255, 0);
   
@@ -94,7 +103,9 @@ for (int i=30;i<x+5;i++){
   delay(200);
   x++;
   if (x=1)x=30;
-  }
+}
+  
+
 for (int i=0;i<x+5;i++){
    strip.setPixelColor(i, 8, 255, 215);
    
@@ -103,7 +114,6 @@ for (int i=0;i<x+5;i++){
   x++;
   if (x=1)x=0;
 }}
-  
   
   
  /* for (int i=30;i<35;i++)
